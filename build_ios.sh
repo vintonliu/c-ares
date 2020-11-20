@@ -45,7 +45,7 @@ PLATFORMS=(
 )
 
 build_cares() {
-    # CFLAGS="-DCARES_USE_LIBRESOLV"
+    CFLAGS="-DCARES_USE_LIBRESOLV"
 
     num=${#PLATFORMS[@]}
     for((i=0; i<num; i++))
